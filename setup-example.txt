@@ -1,0 +1,13 @@
+# create container
+# --name [name]
+# -e [env]
+# -p [local port]:[docker port] port mapping
+# -d detach run container in background and print container ID
+# image to use
+# docker run --name [container's name] -e [env] -p [L port]:[D port] -d [image]
+
+docker run --name master-src-postgres -e POSTGRES_PASSWORD=@gogococoadev -p 5432:5432 -d postgres
+
+# if use docker-compose.yml
+
+docker-compose up -d
